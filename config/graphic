@@ -28,8 +28,6 @@ get_graphicdrivers() {
       XORG_DRIVERS="$XORG_DRIVERS intel"
       COMPOSITE_SUPPORT="yes"
       VAAPI_SUPPORT="yes"
-<<<<<<< HEAD
-=======
     fi
 
     if [ "$drv" = "nouveau" ]; then
@@ -40,7 +38,6 @@ get_graphicdrivers() {
       GALLIUM_DRIVERS="$GALLIUM_DRIVERS,nouveau"
       XORG_DRIVERS="$XORG_DRIVERS nouveau"
       COMPOSITE_SUPPORT="yes"
->>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803
     fi
 
     if [ "$drv" = "nvidia" ]; then

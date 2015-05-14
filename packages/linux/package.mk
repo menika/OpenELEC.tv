@@ -23,11 +23,7 @@ case "$LINUX" in
     PKG_URL="$DISTRO_SRC/$PKG_NAME-$PKG_VERSION.tar.xz"
     ;;
   imx6)
-<<<<<<< HEAD
-    PKG_VERSION="cuboxi-3.14-ea83bda"
-=======
     PKG_VERSION="cuboxi-3.14-dc5edb8"
->>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803
     PKG_URL="$DISTRO_SRC/$PKG_NAME-$PKG_VERSION.tar.xz"
     ;;
   3.18)
@@ -35,13 +31,8 @@ case "$LINUX" in
     PKG_URL="http://www.kernel.org/pub/linux/kernel/v3.x/$PKG_NAME-$PKG_VERSION.tar.xz"
     ;;
   *)
-<<<<<<< HEAD
-    PKG_VERSION="4.0.2"
-    PKG_URL="http://www.kernel.org/pub/linux/kernel/v4.x/$PKG_NAME-$PKG_VERSION.tar.xz"
-=======
     PKG_VERSION="3.17.8"
     PKG_URL="http://www.kernel.org/pub/linux/kernel/v3.x/$PKG_NAME-$PKG_VERSION.tar.xz"
->>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803
     ;;
 esac
 PKG_REV="1"
