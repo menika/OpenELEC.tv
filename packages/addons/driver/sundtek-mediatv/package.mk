@@ -17,8 +17,13 @@
 ################################################################################
 
 PKG_NAME="sundtek-mediatv"
+<<<<<<< HEAD
 PKG_VERSION="6.0"
 PKG_REV="0"
+=======
+PKG_VERSION="4.3"
+PKG_REV="4"
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803
 PKG_ARCH="any"
 PKG_LICENSE="nonfree"
 PKG_SITE="http://support.sundtek.com/"
@@ -30,7 +35,10 @@ PKG_SHORTDESC="Sundtek USB Stick DVB userspace driver"
 PKG_LONGDESC="Driver for Sundtek MediaTV Pro (DVB-C, DVB-T, AnalogTV, Composite, S-Video, FM-Radio USB Stick) and Sundtek SkyTV Ultimate (DVB-S/S2 USB)."
 PKG_IS_ADDON="yes"
 PKG_ADDON_TYPE="xbmc.service"
+<<<<<<< HEAD
 PKG_ADDON_PROVIDES=""
+=======
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803
 PKG_AUTORECONF="no"
 PKG_ADDON_REPOVERSION="6.0"
 

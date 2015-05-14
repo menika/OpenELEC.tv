@@ -16,8 +16,13 @@
 #  along with OpenELEC.  If not, see <http://www.gnu.org/licenses/>.
 ################################################################################
 
+<<<<<<< HEAD:packages/linux-drivers/mt7601u/package.mk
 PKG_NAME="mt7601u"
 PKG_VERSION="42f4084"
+=======
+PKG_NAME="kodi-addon-xvdr"
+PKG_VERSION="c5eff57"
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803:packages/mediacenter/kodi-addon-xvdr/package.mk
 PKG_REV="1"
 PKG_ARCH="any"
 PKG_LICENSE="GPL"

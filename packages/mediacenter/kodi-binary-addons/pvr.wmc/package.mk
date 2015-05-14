@@ -16,8 +16,13 @@
 #  along with OpenELEC.  If not, see <http://www.gnu.org/licenses/>.
 ################################################################################
 
+<<<<<<< HEAD:packages/mediacenter/kodi-binary-addons/pvr.wmc/package.mk
 PKG_NAME="pvr.wmc"
 PKG_VERSION="37b4b29"
+=======
+PKG_NAME="kodi-audioencoder-lame"
+PKG_VERSION="3eb59de"
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803:packages/mediacenter/kodi-audioencoder-lame/package.mk
 PKG_REV="1"
 PKG_ARCH="any"
 PKG_LICENSE="GPL"

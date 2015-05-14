@@ -16,8 +16,13 @@
 #  along with OpenELEC.  If not, see <http://www.gnu.org/licenses/>.
 ################################################################################
 
+<<<<<<< HEAD:packages/mediacenter/kodi-platform/package.mk
 PKG_NAME="kodi-platform"
 PKG_VERSION="48bdd985"
+=======
+PKG_NAME="kodi-audioencoder-wav"
+PKG_VERSION="40aaedf"
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803:packages/mediacenter/kodi-audioencoder-wav/package.mk
 PKG_REV="1"
 PKG_ARCH="any"
 PKG_LICENSE="GPL"

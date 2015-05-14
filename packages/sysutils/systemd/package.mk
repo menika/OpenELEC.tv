@@ -115,6 +115,7 @@ PKG_CONFIGURE_OPTS_TARGET="ac_cv_func_malloc_0_nonnull=yes \
 
 post_makeinstall_target() {
   # remove unneeded stuff
+<<<<<<< HEAD
   rm -rf $INSTALL/etc/systemd/system
   rm -rf $INSTALL/etc/xdg
   rm  -f $INSTALL/usr/bin/kernel-install
@@ -132,6 +133,22 @@ post_makeinstall_target() {
   rm -f $INSTALL/usr/lib/udev/hwdb.d/20-net-ifname.hwdb
   rm -f $INSTALL/usr/lib/udev/hwdb.d/20-sdio-classes.hwdb
   rm -f $INSTALL/usr/lib/udev/hwdb.d/20-sdio-vendor-model.hwdb
+=======
+    rm -rf $INSTALL/etc/systemd/system
+    rm -rf $INSTALL/usr/share/zsh
+    rm -rf $INSTALL/usr/lib/kernel/install.d
+    rm -rf $INSTALL/usr/lib/rpm
+    rm  -f $INSTALL/usr/bin/kernel-install
+    rm -rf $INSTALL/etc/xdg
+    rm -rf $INSTALL/usr/share/factory
+
+   rm -f $INSTALL/usr/lib/udev/hwdb.d/20-OUI.hwdb
+   rm -f $INSTALL/usr/lib/udev/hwdb.d/20-acpi-vendor.hwdb
+   rm -f $INSTALL/usr/lib/udev/hwdb.d/20-bluetooth-vendor-product.hwdb
+   rm -f $INSTALL/usr/lib/udev/hwdb.d/20-net-ifname.hwdb
+   rm -f $INSTALL/usr/lib/udev/hwdb.d/20-sdio-classes.hwdb
+   rm -f $INSTALL/usr/lib/udev/hwdb.d/20-sdio-vendor-model.hwdb
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803
 
   # remove Network adaper renaming rule, this is confusing
   rm -rf $INSTALL/usr/lib/udev/rules.d/80-net-setup-link.rules

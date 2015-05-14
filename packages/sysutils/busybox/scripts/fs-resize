@@ -66,4 +66,8 @@ if [ -e /storage/.please_resize_me ] ; then
     fi
   fi
 fi
+<<<<<<< HEAD
 reboot -f
+=======
+reboot
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803

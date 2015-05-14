@@ -72,6 +72,7 @@ if [ "$PKG_IS_ADDON" = "yes" ] ; then
   unset IFS
 
   mkdir -p $ADDON_BUILD/$PKG_ADDON_ID
+<<<<<<< HEAD
 
   if [ ! -f $ADDON_BUILD/$PKG_ADDON_ID/addon.xml ]; then
     cp config/addon/${PKG_ADDON_TYPE}.xml $ADDON_BUILD/$PKG_ADDON_ID/addon.xml
@@ -84,18 +85,36 @@ if [ "$PKG_IS_ADDON" = "yes" ] ; then
     ADDONVER=$(xmlstarlet sel -t -v "/addon/@version" $ADDON_BUILD/$PKG_ADDON_ID/addon.xml)
   fi
 
+=======
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803
   if [ -f $PKG_DIR/source/default.py ]; then
     cp -R $PKG_DIR/source/* $ADDON_BUILD/$PKG_ADDON_ID
   fi
 
   if [ -f $PKG_DIR/icon/icon.png ]; then
     cp $PKG_DIR/icon/icon.png $ADDON_BUILD/$PKG_ADDON_ID
+<<<<<<< HEAD
+=======
+  else
+    echo "*** WARNING: It's recommended to have a $PKG_DIR/icon/icon.png file ***"
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803
   fi
 
   if [ -f $PKG_DIR/changelog.txt ]; then
     cp $PKG_DIR/changelog.txt $ADDON_BUILD/$PKG_ADDON_ID
+<<<<<<< HEAD
   fi
 
+=======
+  else
+    echo "*** WARNING: It's recommended to have a $PKG_DIR/changelog.txt file ***"
+  fi
+
+  if [ ! -f $ADDON_BUILD/$PKG_ADDON_ID/addon.xml ]; then
+    cp config/addon/${PKG_ADDON_TYPE}.xml $ADDON_BUILD/$PKG_ADDON_ID/addon.xml
+  fi
+
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803
   PROVIDER_NAME="openelec.tv"
   if [ ! -z "$PKG_MAINTAINER" ] ; then
     PROVIDER_NAME="$PKG_MAINTAINER"
@@ -113,7 +132,10 @@ if [ "$PKG_IS_ADDON" = "yes" ] ; then
        -e "s|@PKG_LONGDESC@|$PKG_LONGDESC|g" \
        -e "s|@PKG_DISCLAIMER@|$PKG_DISCLAIMER|g" \
        -e "s|@PROVIDER_NAME@|$PROVIDER_NAME|g" \
+<<<<<<< HEAD
        -e "s|@PKG_ADDON_PROVIDES@|$PKG_ADDON_PROVIDES|g" \
+=======
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803
        -i $ADDON_BUILD/$PKG_ADDON_ID/addon.xml
 
   if [ "$2" != "-test" ] ; then
@@ -124,6 +146,7 @@ if [ "$PKG_IS_ADDON" = "yes" ] ; then
     fi
     cd $ADDON_BUILD
     echo "*** compressing Addon $PKG_ADDON_ID ... ***"
+<<<<<<< HEAD
     zip -rq $PKG_ADDON_ID-$ADDONVER.zip $PKG_ADDON_ID;
     cd - &>/dev/null
 
@@ -134,6 +157,19 @@ if [ "$PKG_IS_ADDON" = "yes" ] ; then
     fi
     if [ -f $ADDON_BUILD/$PKG_ADDON_ID/icon.png ]; then
       cp $ADDON_BUILD/$PKG_ADDON_ID/icon.png $ADDON_INSTALL_DIR/icon.png
+=======
+    zip -rq $PKG_ADDON_ID-$ADDON_VERSION.$PKG_REV.zip $PKG_ADDON_ID;
+    cd - &>/dev/null
+
+    ADDON_INSTALL_DIR="$TARGET/$ADDONS/$ADDON_VERSION/$PROJECT/$TARGET_ARCH/$PKG_ADDON_ID"
+    mkdir -p $ADDON_INSTALL_DIR
+    cp $ADDON_BUILD/$PKG_ADDON_ID-$ADDON_VERSION.$PKG_REV.zip $ADDON_INSTALL_DIR
+    if [ -f $PKG_DIR/changelog.txt ]; then
+      cp $PKG_DIR/changelog.txt $ADDON_INSTALL_DIR/changelog-$ADDON_VERSION.$PKG_REV.txt
+    fi
+    if [ -f $PKG_DIR/icon/icon.png ]; then
+      cp $PKG_DIR/icon/icon.png $ADDON_INSTALL_DIR/icon.png
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803
     fi
   fi
 fi

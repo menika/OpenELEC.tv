@@ -16,8 +16,13 @@
 #  along with OpenELEC.  If not, see <http://www.gnu.org/licenses/>.
 ################################################################################
 
+<<<<<<< HEAD:packages/x11/driver/xf86-input-libinput/package.mk
 PKG_NAME="xf86-input-libinput"
 PKG_VERSION="0.9.0"
+=======
+PKG_NAME="xf86-input-evdev"
+PKG_VERSION="2.9.1"
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803:packages/x11/driver/xf86-input-evdev/package.mk
 PKG_REV="1"
 PKG_ARCH="any"
 PKG_LICENSE="GPL"

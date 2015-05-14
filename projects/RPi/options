@@ -53,7 +53,11 @@
     KERNEL_UBOOT_EXTRA_TARGET=""
 
   # Additional kernel make parameters (for example to specify the u-boot loadaddress)
+<<<<<<< HEAD
     KERNEL_MAKE_EXTRACMD="dtbs"
+=======
+    KERNEL_MAKE_EXTRACMD=""
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803
 
   # Kernel to use. values can be:
   # default:  default mainline kernel
@@ -89,7 +93,11 @@
   # build and install ALSA Audio support (yes / no)
     ALSA_SUPPORT="yes"
 
+<<<<<<< HEAD
   # OpenGL(X) implementation to use (no / mesa)
+=======
+  # OpenGL(X) implementation to use (no / Mesa)
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803
     OPENGL="no"
 
   # OpenGL-ES implementation to use (no / bcm2835-driver / gpu-viv-bin-mx6q)
@@ -104,14 +112,21 @@
   # Windowmanager to use (ratpoison / fluxbox / none)
     WINDOWMANAGER="none"
 
+<<<<<<< HEAD
   # Xorg Graphic drivers to use (all / i915,i965,r200,r300,r600,nvidia)
   # Space separated list is supported,
   # e.g. GRAPHIC_DRIVERS="i915 i965 r300 r600 radeonsi nvidia"
+=======
+  # Xorg Graphic drivers to use (all / i915,i965,r200,r300,r600,nvidia,nouveau)
+  # Space separated list is supported,
+  # e.g. GRAPHIC_DRIVERS="i915 i965 r300 r600 radeonsi nvidia nouveau"
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803
     GRAPHIC_DRIVERS=""
 
   # KODI Player implementation to use (default / bcm2835-driver / libfslvpuwrap)
     KODIPLAYER_DRIVER="bcm2835-driver"
 
+<<<<<<< HEAD
   # KODI DCADEC support (yes / no)
     DCADEC_SUPPORT="yes"
 
@@ -149,3 +164,42 @@
   # Space separated list is supported,
   # e.g. ADDITIONAL_DRIVERS="DRIVER1 DRIVER2"
     ADDITIONAL_DRIVERS="$ADDITIONAL_DRIVERS mt7601u"
+=======
+  # Modules to install in initramfs for early boot
+    INITRAMFS_MODULES=""
+
+  # additional Firmware to use (dvb-firmware, misc-firmware, wlan-firmware)
+  # Space separated list is supported,
+  # e.g. FIRMWARE="dvb-firmware misc-firmware wlan-firmware"
+    FIRMWARE="misc-firmware wlan-firmware dvb-firmware"
+
+  # build and install ATV IR remote support (yes / no)
+    ATVCLIENT_SUPPORT="no"
+
+  # build and install IRServer IR/LCD support (yes / no)
+    IRSERVER_SUPPORT="no"
+
+  # build with swap support (yes / no)
+    SWAP_SUPPORT="yes"
+
+  # swap support enabled per default (yes / no)
+    SWAP_ENABLED_DEFAULT="no"
+
+  # swapfile size if SWAP_SUPPORT=yes in MB
+    SWAPFILESIZE="128"
+
+  # build with installer (yes / no)
+    INSTALLER_SUPPORT="no"
+
+  # build and install 'RSXS' Screensaver (yes / no)
+    KODI_SCR_RSXS="no"
+
+  # build and install 'ProjectM' Visualization (yes / no)
+    KODI_VIS_PROJECTM="no"
+
+  # build and install 'GOOM' Visualization (yes / no)
+    KODI_VIS_GOOM="no"
+
+  # build and install 'FishBMC' Visualization (yes / no)
+    KODI_VIS_FISHBMC="no"
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803

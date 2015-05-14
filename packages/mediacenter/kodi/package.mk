@@ -17,7 +17,11 @@
 ################################################################################
 
 PKG_NAME="kodi"
+<<<<<<< HEAD
 PKG_VERSION="15.0-beta2-6e5ede3"
+=======
+PKG_VERSION="14-7cc53a9"
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803
 PKG_REV="1"
 PKG_ARCH="any"
 PKG_LICENSE="GPL"
@@ -113,6 +117,13 @@ else
   KODI_DVDCSS="--disable-dvdcss"
 fi
 
+<<<<<<< HEAD
+=======
+if [ "$FAAC_SUPPORT" = yes ]; then
+  PKG_DEPENDS_TARGET="$PKG_DEPENDS_TARGET faac"
+fi
+
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803
 if [ "$KODI_BLURAY_SUPPORT" = yes ]; then
   PKG_DEPENDS_TARGET="$PKG_DEPENDS_TARGET libbluray"
   KODI_BLURAY="--enable-libbluray"
@@ -196,8 +207,11 @@ if [ ! "$KODIPLAYER_DRIVER" = default ]; then
   elif [ "$KODIPLAYER_DRIVER" = libfslvpuwrap ]; then
     KODI_CODEC="--enable-codec=imxvpu"
     PKG_DEPENDS_TARGET="$PKG_DEPENDS_TARGET gpu-viv-g2d"
+<<<<<<< HEAD
   elif [ "$KODIPLAYER_DRIVER" = libamcodec ]; then
     KODI_CODEC="--enable-codec=amcodec"
+=======
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803
   else
     KODI_OPENMAX="--disable-openmax"
   fi
@@ -258,6 +272,11 @@ PKG_CONFIGURE_OPTS_TARGET="gl_cv_func_gettimeofday_clobber=no \
                            --enable-rtmp \
                            $KODI_SAMBA \
                            $KODI_NFS \
+<<<<<<< HEAD
+=======
+                           --disable-afpclient \
+                           --enable-libvorbisenc \
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803
                            --disable-libcap \
                            $KODI_DVDCSS \
                            --disable-mid \

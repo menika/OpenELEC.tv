@@ -69,4 +69,8 @@ elif [ -f /storage/.cache/reset_xbmc ] ; then
   fi
 fi
 sync
+<<<<<<< HEAD
 reboot -f
+=======
+reboot
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803

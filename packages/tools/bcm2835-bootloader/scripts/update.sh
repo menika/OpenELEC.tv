@@ -30,8 +30,23 @@
   cp -p $SYSTEM_ROOT/usr/share/bootloader/fixup.dat $BOOT_ROOT
   cp -p $SYSTEM_ROOT/usr/share/bootloader/start.elf $BOOT_ROOT
 
+<<<<<<< HEAD
   cp -p $SYSTEM_ROOT/usr/share/bootloader/*.dtb $BOOT_ROOT
   cp -pR $SYSTEM_ROOT/usr/share/bootloader/overlays $BOOT_ROOT
+=======
+  for dtb in $SYSTEM_ROOT/usr/share/bootloader/*.dtb ; do
+    if [ -f $dtb ]; then
+      cp -p $dtb $BOOT_ROOT
+    fi
+  done
+
+  for overlays in $SYSTEM_ROOT/usr/share/bootloader/overlays/* ; do
+    if [ -f $overlays ]; then
+      mkdir -p $BOOT_ROOT/overlays
+      cp -p $overlays $BOOT_ROOT/overlays
+    fi
+  done
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803
 
 # cleanup not more needed files
   rm -rf $BOOT_ROOT/loader.bin

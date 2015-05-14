@@ -17,7 +17,11 @@
 ################################################################################
 
 PKG_NAME="OpenELEC-settings"
+<<<<<<< HEAD
 PKG_VERSION="0.6.5"
+=======
+PKG_VERSION="0.5.8"
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803
 PKG_REV="1"
 PKG_ARCH="any"
 PKG_LICENSE="prop."

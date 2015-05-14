@@ -16,8 +16,13 @@
 #  along with OpenELEC.  If not, see <http://www.gnu.org/licenses/>.
 ################################################################################
 
+<<<<<<< HEAD:packages/mediacenter/kodi-binary-addons/pvr.hts/package.mk
 PKG_NAME="pvr.hts"
 PKG_VERSION="4bf1a97"
+=======
+PKG_NAME="kodi-audioencoder-flac"
+PKG_VERSION="62c2cc8"
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803:packages/mediacenter/kodi-audioencoder-flac/package.mk
 PKG_REV="1"
 PKG_ARCH="any"
 PKG_LICENSE="GPL"

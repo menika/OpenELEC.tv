@@ -17,7 +17,11 @@
 ################################################################################
 
 PKG_NAME="ffmpeg"
+<<<<<<< HEAD
 PKG_VERSION="2.6.2"
+=======
+PKG_VERSION="2.4.6"
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803
 PKG_REV="1"
 PKG_ARCH="any"
 PKG_LICENSE="LGPL"
@@ -56,12 +60,15 @@ else
   FFMPEG_LIBDCADEC="--disable-libdcadec"
 fi
 
+<<<<<<< HEAD
 if [ "$DEBUG" = yes ]; then
   FFMPEG_DEBUG="--enable-debug --disable-stripping"
 else
   FFMPEG_DEBUG="--disable-debug --enable-stripping"
 fi
 
+=======
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803
 case "$TARGET_ARCH" in
   arm)
       FFMPEG_CPU=""

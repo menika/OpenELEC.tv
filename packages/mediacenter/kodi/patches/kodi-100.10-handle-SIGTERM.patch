@@ -1,4 +1,8 @@
+<<<<<<< HEAD:packages/mediacenter/kodi/patches/kodi-100.10-handle-SIGTERM.patch
 From d70e7c8826a95852a05ef3de0fea71c8b85accb1 Mon Sep 17 00:00:00 2001
+=======
+From eabb811c7f82695cb566b0aadf5d86cb7448368a Mon Sep 17 00:00:00 2001
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803:packages/mediacenter/kodi/patches/kodi-999.03-0001-handle-SIGTERM.patch
 From: Stefan Saraev <stefan@saraev.ca>
 Date: Mon, 15 Dec 2014 21:28:54 +0200
 Subject: [PATCH 10/12] handle SIGTERM
@@ -31,10 +35,17 @@ is requested externaly (ssh, 3rdparty script).
  6 files changed, 30 insertions(+), 4 deletions(-)
 
 diff --git a/xbmc/Application.cpp b/xbmc/Application.cpp
+<<<<<<< HEAD:packages/mediacenter/kodi/patches/kodi-100.10-handle-SIGTERM.patch
 index da6aa6e..b39c906 100644
 --- a/xbmc/Application.cpp
 +++ b/xbmc/Application.cpp
 @@ -2583,12 +2583,19 @@ bool CApplication::Cleanup()
+=======
+index 875ca39..9572b62 100644
+--- a/xbmc/Application.cpp
++++ b/xbmc/Application.cpp
+@@ -3477,12 +3477,19 @@ bool CApplication::Cleanup()
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803:packages/mediacenter/kodi/patches/kodi-999.03-0001-handle-SIGTERM.patch
    }
  }
  
@@ -55,7 +66,11 @@ index da6aa6e..b39c906 100644
      CAnnouncementManager::Get().Announce(System, "xbmc", "OnQuit", vExitCode);
  
      SaveFileState(true);
+<<<<<<< HEAD:packages/mediacenter/kodi/patches/kodi-100.10-handle-SIGTERM.patch
 @@ -2612,7 +2619,6 @@ void CApplication::Stop(int exitCode)
+=======
+@@ -3506,7 +3513,6 @@ void CApplication::Stop(int exitCode)
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803:packages/mediacenter/kodi/patches/kodi-999.03-0001-handle-SIGTERM.patch
  
      m_bStop = true;
      m_AppFocused = false;
@@ -64,10 +79,17 @@ index da6aa6e..b39c906 100644
  
      // cancel any jobs from the jobmanager
 diff --git a/xbmc/Application.h b/xbmc/Application.h
+<<<<<<< HEAD:packages/mediacenter/kodi/patches/kodi-100.10-handle-SIGTERM.patch
 index b4da8f2..b5fdae6 100644
 --- a/xbmc/Application.h
 +++ b/xbmc/Application.h
 @@ -154,6 +154,7 @@ public:
+=======
+index 0a332ff..a4d6b58 100644
+--- a/xbmc/Application.h
++++ b/xbmc/Application.h
+@@ -153,6 +153,7 @@ class CApplication : public CXBApplicationEx, public IPlayerCallback, public IMs
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803:packages/mediacenter/kodi/patches/kodi-999.03-0001-handle-SIGTERM.patch
    bool StartPVRManager();
    void StopPVRManager();
    bool IsCurrentThread() const;
@@ -76,7 +98,11 @@ index b4da8f2..b5fdae6 100644
    void RestartApp();
    void UnloadSkin(bool forReload = false);
 diff --git a/xbmc/ApplicationMessenger.cpp b/xbmc/ApplicationMessenger.cpp
+<<<<<<< HEAD:packages/mediacenter/kodi/patches/kodi-100.10-handle-SIGTERM.patch
 index a46c9be..9bb6804 100644
+=======
+index 2f4d651..0467893 100644
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803:packages/mediacenter/kodi/patches/kodi-999.03-0001-handle-SIGTERM.patch
 --- a/xbmc/ApplicationMessenger.cpp
 +++ b/xbmc/ApplicationMessenger.cpp
 @@ -261,13 +261,14 @@ void CApplicationMessenger::ProcessMessage(ThreadMessage *pMsg)
@@ -128,7 +154,7 @@ diff --git a/xbmc/XBApplicationEx.h b/xbmc/XBApplicationEx.h
 index c46cba1..ed3f35f 100644
 --- a/xbmc/XBApplicationEx.h
 +++ b/xbmc/XBApplicationEx.h
-@@ -40,6 +40,7 @@ public:
+@@ -40,6 +40,7 @@ class CXBApplicationEx : public IWindowManagerCallback
    // Variables for timing
    bool m_bStop;
    int  m_ExitCode;
@@ -165,6 +191,9 @@ index 87fe2fd..3bfb338 100644
    // set up some xbmc specific relationships
    XBMC::Context context;
  
+<<<<<<< HEAD:packages/mediacenter/kodi/patches/kodi-100.10-handle-SIGTERM.patch
 -- 
 2.1.4
 
+=======
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803:packages/mediacenter/kodi/patches/kodi-999.03-0001-handle-SIGTERM.patch

@@ -446,6 +446,10 @@ fi
         )
 
       # copy additional files
+<<<<<<< HEAD
+=======
+        cp -R $CONFIG/release/openelec.ico $RELEASE_DIR/${DISTRONAME}_${PROJECT}/System
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803
         mkdir -p $RELEASE_DIR/${DISTRONAME}_${PROJECT}/System/licenses
           cp $ROOT/licenses/* $RELEASE_DIR/${DISTRONAME}_${PROJECT}/System/licenses
 

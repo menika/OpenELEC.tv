@@ -314,6 +314,11 @@ show_config() {
   fi
   config_message="$config_message\n - OpenGL (GLX) support (provider):\t $OPENGL_SUPPORT ($OPENGL)"
   config_message="$config_message\n - OpenGLES support (provider):\t\t $OPENGLES_SUPPORT ($OPENGLES)"
+<<<<<<< HEAD
+=======
+  config_message="$config_message\n - WindowManager:\t\t\t $WINDOWMANAGER"
+  config_message="$config_message\n - Xorg Graphic Drivers:\t\t $GRAPHIC_DRIVERS"
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803
   config_message="$config_message\n - uvesafb support:\t\t\t $UVESAFB_SUPPORT"
 
   # Hardware decoder support
@@ -324,7 +329,10 @@ show_config() {
   config_message="$config_message\n - Kodi Player driver:\t\t\t $KODIPLAYER_DRIVER"
   config_message="$config_message\n - VAAPI Support:\t\t\t $VAAPI_SUPPORT"
   config_message="$config_message\n - VDPAU Support:\t\t\t $VDPAU_SUPPORT"
+<<<<<<< HEAD
   config_message="$config_message\n - DCA decoder Support:\t\t\t $DCADEC_SUPPORT"
+=======
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803
 
   # Input device configuration
 
@@ -343,6 +351,10 @@ show_config() {
   config_message="$config_message\n $dashes$dashes"
 
   config_message="$config_message\n - ALSA support:\t\t\t $ALSA_SUPPORT"
+<<<<<<< HEAD
+=======
+  config_message="$config_message\n - Pulseaudio support:\t\t\t $PULSEAUDIO_SUPPORT"
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803
   config_message="$config_message\n - Bluetooth support:\t\t\t $BLUETOOTH_SUPPORT"
   config_message="$config_message\n - LCD drivers:\t\t\t\t $LCD_DRIVER"
 
@@ -368,6 +380,11 @@ show_config() {
   config_message="$config_message\n - SAMBA mounting support:\t\t $SAMBA_SUPPORT"
   config_message="$config_message\n - SAMBA server support:\t\t $SAMBA_SERVER"
   config_message="$config_message\n - SFTP server support:\t\t\t $SFTP_SERVER"
+<<<<<<< HEAD
+=======
+  config_message="$config_message\n - PPTP support:\t\t\t $PPTP_SUPPORT"
+  config_message="$config_message\n - OpenVPN support:\t\t\t $OPENVPN_SUPPORT"
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803
 
   # OS configuration
 
@@ -405,10 +422,15 @@ show_config() {
   config_message="$config_message\n - Kodi version:\t\t\t $MEDIACENTER"
   config_message="$config_message\n - Kodi nonfree support:\t\t $KODI_NONFREE_SUPPORT"
   config_message="$config_message\n - Kodi Blu-Ray support:\t\t $KODI_BLURAY_SUPPORT"
+<<<<<<< HEAD
   if [ "$KODI_BLURAY_SUPPORT" = "yes" ] ; then
     config_message="$config_message\n   - Bluray BD+ support:\t\t $BLURAY_BDPLUS_SUPPORT"
     config_message="$config_message\n   - Bluray AACS support:\t\t $BLURAY_AACS_SUPPORT"
   fi
+=======
+  config_message="$config_message\n - Bluray BD+ support:\t\t\t $BLURAY_BDPLUS_SUPPORT"
+  config_message="$config_message\n - Bluray AACS support:\t\t\t $BLURAY_AACS_SUPPORT"
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803
   config_message="$config_message\n - Kodi DVDCSS support:\t\t\t $KODI_DVDCSS_SUPPORT"
   config_message="$config_message\n - Kodi Airplay support:\t\t $KODI_AIRPLAY_SUPPORT"
   config_message="$config_message\n - Kodi Airtunes support:\t\t $KODI_AIRTUNES_SUPPORT"

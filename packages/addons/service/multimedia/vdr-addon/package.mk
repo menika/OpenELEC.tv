@@ -18,13 +18,22 @@
 ################################################################################
 
 PKG_NAME="vdr-addon"
+<<<<<<< HEAD
 PKG_VERSION="6.0"
 PKG_REV="0"
+=======
+PKG_VERSION="4.3"
+PKG_REV="11"
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803
 PKG_ARCH="any"
 PKG_LICENSE="GPL"
 PKG_SITE="http://www.openelec.tv"
 PKG_URL=""
+<<<<<<< HEAD
 PKG_DEPENDS_TARGET="toolchain attr libcap vdr vdr-plugin-vnsiserver vdr-iptv vdr-wirbelscan vdr-wirbelscancontrol vdr-plugin-dvbapi vdr-plugin-streamdev vdr-live vdr-epgsearch vdr-plugin-xmltv2vdr vdr-plugin-eepg vdr-dummydevice vdr-satip vdr-plugin-epgfixer vdr-plugin-restfulapi"
+=======
+PKG_DEPENDS_TARGET="toolchain attr libcap vdr vdr-plugin-xvdr vdr-plugin-vnsiserver vdr-iptv vdr-wirbelscan vdr-wirbelscancontrol vdr-plugin-dvbapi vdr-plugin-streamdev vdr-live vdr-control vdr-epgsearch vdr-plugin-xmltv2vdr vdr-plugin-eepg vdr-dummydevice vdr-satip vdr-plugin-epgfixer vdr-plugin-restfulapi"
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803
 PKG_PRIORITY="optional"
 PKG_SECTION="service.multimedia"
 PKG_SHORTDESC="vdr: A powerful DVB TV application"

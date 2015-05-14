@@ -17,7 +17,11 @@
 ################################################################################
 
 PKG_NAME="boost"
+<<<<<<< HEAD
 PKG_VERSION="1_58_0"
+=======
+PKG_VERSION="1_57_0"
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803
 PKG_REV="1"
 PKG_ARCH="any"
 PKG_LICENSE="OSS"

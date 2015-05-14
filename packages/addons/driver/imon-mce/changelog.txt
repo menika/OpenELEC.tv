@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 6.0.0
   rebuild for OpenELEC-6.0
 
+=======
+>>>>>>> 364c0247d81afddb5265b073fc41fd1c988e5803
 4.3.1
  fix keymaps path
 
