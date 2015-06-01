@@ -1,15 +1,9 @@
 # Name of the Distro to build (full name, without special characters)
-<<<<<<< HEAD
-  DISTRONAME="MediaaboX"
 
-# short project description
-  DESCRIPTION="MediaboX is a fast and userfriendly Kodi Entertainment Center distribution."
-=======
   DISTRONAME=“MediaboX”
 
 # short project description
   DESCRIPTION=“MediaboX is a fast and userfriendly Kodi Entertainment Center distribution."
->>>>>>> e28de9d... create media box distribution
 
 # Welcome Message for e.g. SSH Server (up to 5 Lines)
   GREETING0="##############################################"
@@ -19,11 +13,7 @@
   GREETING4=""
 
 # Root password to integrate in the target system
-<<<<<<< HEAD
-  ROOT_PASSWORD="mediabox"
-=======
   ROOT_PASSWORD=“mediabox”
->>>>>>> e28de9d... create media box distribution
 
 # Mediacenter to use (kodi / no)
   MEDIACENTER="kodi"
